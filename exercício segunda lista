@@ -1,0 +1,119 @@
+# include  < math.h >
+# include  < locale.h >
+int A; // variável global, usada em algumas das funções abaixo.
+
+void  primo () { // alterar um número é primo ou não
+	int x, resultado;
+
+	printf ( " Digite um número para saber se ele é o primeiro: \ n " );
+	scanf ( " % d " , & x);
+	resultado = x% 1 || x% x;
+	if (resultado < 1 && resultado <x! = 0 ) {
+		printf ( " e um número primo! \ n " );
+	}
+	mais {
+		printf ( " Nao e um numero primo! \ n " );
+	}
+}	
+void  fatorial () { // imprimindo o numero fatorial
+	int x, y;
+
+	printf ( " Digite um número \ n " );
+	scanf ( " % d " , & x);
+	y = x;
+	y = y - 1 ;
+	para (y = y; y> 0 ; y -) {
+		x = x * y;
+	}
+	printf ( " % f " , x);
+}
+void  fibonate () { // sequência de fibonate
+	int n, n1 = 0 , n2 = 1 , x;
+
+	printf ( " Digite um número: " , n);
+	scanf ( " % d " , & n);
+
+	while (n! = 0 ) {
+
+ 	printf ( " % d " , x);
+		x = n1 + n2;
+		n2 = n1;
+		n1 = x;
+		n--;
+	}
+}
+void  raiz () { // questão 4, função q calcula a raiz de um número na base de outro.
+
+	flutuar a, x;
+@@ -18,8 +57,6 @@ void raiz () {// questão 4, função q calcula a raiz de um número na base de fora
+	x = pow (a, 1,0 / b);
+	printf ( " O resultado é: % e \ n " , x);
+}
+
+
+void  potencia () { // questão 3, function for calcular ppotencia.
+
+	flutuar a, x;
+@@ -33,7 +70,6 @@ void potencia () {// questão 3, função para calcular ppotencia.
+	x = pow (a, b);
+	printf ( " O resultado é: % e \ n " , x);
+}
+
+void  media_ponderada () { // questão 6. media de 3 provas / peso
+
+	float num1, num2, num3, mídia, peso = 3 ;
+@@ -56,19 +92,13 @@ void media_ponderada () {// questão 6. media de 3 provas / peso
+		printf ( " Reprovado! \ n " );	
+
+}
+
+
+ matrícula vazia () { // questão 8, função para imprimir minha matrícula e nome.
+
+	printf ( " Nome: Rodrigo Lima da Costa. \ n " );
+
+	A = 1910026563 ;
+
+	printf ( " Minha matrícula: % x \ n " , A);
+
+}
+
+
+void  media () { // questão 7, função para verificação de notas.
+	float num1, num2, mídia;
+
+@@ -112,12 +142,15 @@ int main () {// questão 1
+	 setlocale (LC_ALL, " português " );
+	printf ( // Menu de opções do programa
+	 " \ n --------------------------- Menu ------------------- ---------- \ n "
+	" Digite 1 para saber se um número é para ou para . \ N "		
+	" Digite 1 para saber se um número é par ou par . \ N "		
+	" Digite 2 para calcular a potência \ n "
+	" Digite 3 para calcular uma raiz. \ N "
+	" Digite 4 para saber se o ano é bissexto. \ N "
+	" Digite 5 para calcular a média ponderada. \ N "
+	" Digite 6 para calcular a média simples. \ N "
+	" Digite 7 para calcular o fatorial de um número. \ N "
+	" Digite 8 para saber se um número é primo. \ N "
+	" Digite 9 para saber a sequência de número digitado. \ N "
+	" Digite 10 para saber o nome do programa e sua matrícula. \ N "
+	" Digite 0 para encerrar o programa. \ N "
+	" ------------------------------------------------- ----------- \ n " );
+@@ -158,11 +191,15 @@ int main () {// questão 1
+			quebrar ;
+
+			caso  7 :
+
+				fatorial ();
+			quebrar ;
+
+			caso  8 :
+
+				primo ();
+			quebrar ;
+
+			caso  9 :
+				fibonato ();
+			quebrar ;
+
+			caso  10 :
