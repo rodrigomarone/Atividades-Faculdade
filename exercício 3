@@ -1,0 +1,126 @@
+questão 1
+
+#include <stdio.h>
+
+
+int main () {
+	char x [20];
+	int a = 0;
+
+	printf ("Digite um texto para saber a quantidade de caracteres:");
+	scanf ("% [^ \ n] s", x);
+
+	para (; x [a]! = '\ 0'; a ++) {}
+
+	printf ("\ n% d", a);
+
+	retornar 0;
+}
+
+
+questão 2 
+
+#include <stdio.h>
+
+int main () {
+	char x [20];
+	int a = 0, c = 0;
+
+	printf ("Digite um texto para saber a quantidade de votos:");
+	scanf ("% [^ \ n] s", x);
+
+	para (; x [a]! = '\ 0'; a ++) {
+		se (x [a] == 'a' || x [a] == 'e' || x [a] == 'i' || x [a] == 'o' || x [a] == 'u') {
+		c ++;
+		}
+	}
+
+
+	printf ("% d", c);
+
+	retornar 0;
+}
+
+
+questão 3
+
+#include <stdio.h>
+
+int main () {
+	caractere x [20], z [30];
+	int a = 0, b = 0;
+	
+	printf ("Digite o primeiro texto para saber se são iguais:");
+	scanf ("% [^ \ n] s", x);
+	getchar ();
+	printf ("Digite o segundo texto para saber se são iguais:");
+	scanf ("% [^ \ n] s", z);
+	
+
+	while (x [a]! = '\ 0' && z [a]! = '\ 0') {
+		if (x [a]! = z [a]) {
+			b = 1;
+			pausa; 
+		}
+		a ++;
+	}
+	
+	if (b == 0 && x [a] == '\ 0' && z [a] == '\ 0') {
+		printf ("\ nIguais!");
+	} outro{
+		printf ("\ nDesiguais!");
+	}	
+	
+	retornar 0;
+}
+
+
+questão 4
+
+#include <stdio.h>
+
+int main () {
+	char x [30], z [30];
+	int a = 0;
+	
+	printf ("Digite um texto, para obter sua cópia:");
+  
+  
+  
+  questão 5
+  
+  #include <stdio.h>
+
+int main () {
+	char x [30], z [30];
+	int a = 0, b = 0;
+	
+	printf ("Digite um texto:");
+	scanf ("% [^ \ n] s", x);
+	getchar ();
+	printf ("Digite um texto para concatenalo:");
+	scanf ("% [^ \ n] s", z);
+	
+	para (; x [a]! = '\ 0'; a ++) {}
+
+	para (; z [b]! = '\ 0'; b ++) {
+		x [a] = z [b];
+		a ++;
+	}
+	
+	x [a] = '\ 0';
+	printf ("% s", x);
+	
+	retornar 0;
+	
+	scanf ("% [^ \ n] s", x);
+	
+	while (x [a]! = '\ 0') {
+		z [a] = x [a];
+		a ++;
+	}
+	
+	z [a] = '\ 0';
+	printf ("% s", z);
+	
+	retornar 0;
